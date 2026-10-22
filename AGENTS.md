@@ -1,0 +1,1 @@
+- BricoLoop business rules live in `src/lib/bricoloop/service.ts` (pure, unit-tested); API routes in `src/routes/api/*` are thin wrappers so rules are enforced server-side once.
