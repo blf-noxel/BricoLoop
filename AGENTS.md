@@ -1,1 +1,3 @@
-- BricoLoop business rules live in `src/lib/bricoloop/service.ts` (pure, unit-tested); API routes in `src/routes/api/*` are thin wrappers so rules are enforced server-side once.
+- Backend business rules live in `backend/src/service.js` and are kept separate from Express route wiring in `backend/src/app.js`.
+- The frontend calls the Express API through `src/lib/bricoloop/api-client.ts`; keep its request and response shapes in sync with `API.md`.
+- Persistent demo data is stored in the ignored `backend/.data/` directory.
